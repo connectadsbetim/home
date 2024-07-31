@@ -205,57 +205,43 @@
             <p><strong>Social Media:</strong> <span class="value" id="social-media-price">R$ 500,00</span></p>
             <p><strong>Gestão de Tráfego Pago:</strong> <span class="value" id="traffic-price">R$ 500,00</span></p>
             <p><strong>Total:</strong> <span class="value" id="total-price">R$ 1.000,00 por mês</span></p>
-            <p>Investimento em Anúncios: <span class="value">R$ 15,00 por dia</span>, totalizando <span class="value">R$ 330,00 por mês</span></p>
-            <p><strong>Proposta para Website (Pagamento Único):</strong> <span class="value" id="website-price">R$ 1.000,00</span></p>
-            <p>Promoção: Se adquirir os planos mensais, o site sai por <span class="value">R$ 700,00</span></p>
+            <p>Investimento em Anúncios: <span class="value">R$ 15,00 por dia</span>, totalizando R$ 330,00 por mês.</p>
             <div class="discount-code">
-                <p>Código de Desconto: <strong>Connect10%</strong></p>
+                <p>Use o código <strong>Connect10%</strong> para obter 10% de desconto!</p>
                 <button onclick="applyDiscount()">Aplicar Desconto</button>
-                <button onclick="resetDiscount()">Valor Original</button>
+                <button onclick="removeDiscount()">Remover Desconto</button>
             </div>
         </div>
         <div class="section" id="contact">
-            <h2>Depoimentos</h2>
-            <div class="testimonial">
-                <i class="fas fa-comment-dots icon"></i>
-                <p><strong>Jake:</strong> “Lucas é um excelente profissional, não é do tipo vendedor que entrou no tráfego pago de paraquedas, estuda, capacita e te fala a real mesmo. Não é do dia para noite que as coisas acontecem e essa transparência nos trás segurança que com o tempo se torna resultado.”</p>
-            </div>
-            <div class="testimonial">
-                <i class="fas fa-comment-dots icon"></i>
-                <p><strong>Wal Miranda:</strong> “Estou super satisfeita com o profissionalismo do Lucas, super atencioso, te explica tudo em detalhes, te dá dicas e o mais importante, você realmente consegue ver os resultados. Super indico!”</p>
-            </div>
-            <div class="testimonial">
-                <i class="fas fa-comment-dots icon"></i>
-                <p><strong>Izabella:</strong> “Lucas é o cara, super profissional, da suporte, da dica, se dispõe a vir ajudar a gravar videos. É o profissional mais completo e humano com quem ja trabalhei. Meu negocio antes e depois do Lucas esta outro. Merece toda sorte de bençãos.”</p>
-            </div>
+            <h2>Contato</h2>
+            <p>Gostaria de iniciar conosco? Clique no botão abaixo:</p>
+            <a href="https://wa.me/5531992905122?text=Olá%20Connect%20Ads%20Betim,%20vim%20pelo%20seu%20site%20e%20tenho%20interesse%20nos%20planos%20de%20marketing." class="cta">Entrar em Contato</a>
         </div>
     </div>
-    <div class="footer">
-        <p>⭐️ | Avaliação 5 Estrelas <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
-        <p>Cidade Betim | <a href="https://www.instagram.com/connectadsbetim/" target="_blank" style="color: white;">Instagram</a> | <a href="https://www.google.com/search?q=Connect+Ads+Betim" target="_blank" style="color: white;">Google Avaliar</a></p>
-    </div>
-    <a href="https://wa.me/SEUNUMERODEWHATSAPP?text=Olá%20Connect%20Ads%20Betim%2C%20vim%20pelo%20seu%20site%20e%20tenho%20interesse%20nos%20planos%20de%20marketing." class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/5531992905122?text=Olá%20Connect%20Ads%20Betim,%20vim%20pelo%20seu%20site%20e%20tenho%20interesse%20nos%20planos%20de%20marketing." class="whatsapp-button">
         <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
     </a>
+    <div class="footer">
+        <p>© 2024 Connect Ads Betim</p>
+        <p>Rua Exemplo, Cidade Betim, MG</p>
+        <p>Siga-nos no Instagram: <a href="https://www.instagram.com/connectadsbetim" target="_blank" style="color: white;">@connectadsbetim</a></p>
+    </div>
     <script>
         function toggleMenu() {
-            document.querySelector('.mobile-menu').classList.toggle('active');
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('active');
         }
-
+        
         function applyDiscount() {
-            // Atualizar os valores para refletir 10% de desconto
-            document.getElementById('social-media-price').innerText = 'R$ 450,00';
-            document.getElementById('traffic-price').innerText = 'R$ 450,00';
-            document.getElementById('total-price').innerText = 'R$ 900,00 por mês';
-            document.getElementById('website-price').innerText = 'R$ 900,00';
+            document.getElementById('social-media-price').textContent = 'R$ 450,00';
+            document.getElementById('traffic-price').textContent = 'R$ 450,00';
+            document.getElementById('total-price').textContent = 'R$ 900,00 por mês';
         }
-
-        function resetDiscount() {
-            // Restaurar os valores originais
-            document.getElementById('social-media-price').innerText = 'R$ 500,00';
-            document.getElementById('traffic-price').innerText = 'R$ 500,00';
-            document.getElementById('total-price').innerText = 'R$ 1.000,00 por mês';
-            document.getElementById('website-price').innerText = 'R$ 1.000,00';
+        
+        function removeDiscount() {
+            document.getElementById('social-media-price').textContent = 'R$ 500,00';
+            document.getElementById('traffic-price').textContent = 'R$ 500,00';
+            document.getElementById('total-price').textContent = 'R$ 1.000,00 por mês';
         }
     </script>
 </body>
